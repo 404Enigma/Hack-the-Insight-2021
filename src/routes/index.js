@@ -9,4 +9,7 @@ router.get("/login", (req, res) => {
     res.render("pages/login");
 });
 
+router.use("/auth", require("./auth"));
+router.use(require("./dashboard"));
+
 module.exports = router;
