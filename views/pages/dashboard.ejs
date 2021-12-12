@@ -140,9 +140,8 @@
                             </div>
                             <div class="card-body row">
                                 <div class="col-8">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, doloremque distinctio.
-                                    Dicta inventore magnam sit eius nisi quo ex. Voluptatibus, magni nesciunt! Sapiente
-                                    tenetur fugit pariatur libero optio assumenda molestiae?
+                                    Could you try the steps in this guide and see if that helps: https://goo.gle/2MxU28H? If you still face issues, we're happy to help you directly here: https://goo.gle/2r2DZrR. Thanks for reaching out.",
+                                    "Keeps disappearing from home page.
                                 </div>
                                 <div
                                     class="
@@ -154,14 +153,12 @@
                                         text-wrap
                                     "
                                 >
-                                    <div class="badge bg-success text-light text-wrap">36% Confidence Level</div>
+                                    <div class="badge bg-success text-light text-wrap">66% Confidence Level</div>
                                 </div>
                             </div>
                             <div class="card-body row">
                                 <div class="col-8">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, doloremque distinctio.
-                                    Dicta inventore magnam sit eius nisi quo ex. Voluptatibus, magni nesciunt! Sapiente
-                                    tenetur fugit pariatur libero optio assumenda molestiae?
+                                    We're sorry about that. Let's connect you to a specialist for further assistance.
                                 </div>
                                 <div
                                     class="
@@ -173,7 +170,7 @@
                                         text-wrap
                                     "
                                 >
-                                    <div class="badge bg-danger text-light text-wrap">30% Confidence Level</div>
+                                    <div class="badge bg-danger text-light text-wrap">24% Confidence Level</div>
                                 </div>
                             </div>
                         </div>
@@ -207,12 +204,15 @@
                     e.preventDefault();
                     const formData = new FormData(e.target);
                     const data = Object.fromEntries(formData.entries());
-                    console.log(data);
+                    console.log(Object.values(data));
+                    const query = Object.values(data)[0]
+
+                    
                     // document.getElementById("modal__content").innerHTML = "Task Added!";
                     // $("#liveToast").toast("show");
                     axios({
                         method: "get",
-                        url: `/query/${data}`,
+                        url: `/query/${query}`,
                     })
                         .then(function (response) {
                             console.log(response);

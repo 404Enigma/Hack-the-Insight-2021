@@ -13,6 +13,7 @@ const passportSetup = require("./src/config/passport_setup");
 const cookieParser = require("cookie-parser");
 const cookieSession = require("cookie-session");
 const keys = require("./src/config/keys");
+const cors = require("cors")
 
 app.use("/", express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
@@ -20,6 +21,10 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cookieParser());
+
+app.use(cors({
+    origin: 'http:localhost:8080'
+}));
 
 app.use(
     cookieSession({
@@ -34,6 +39,6 @@ app.use(passport.session());
 
 app.use("/", require("./src/routes/index"));
 
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0', () => {
     console.log(`listening at http://localhost:${PORT}`);
 });
