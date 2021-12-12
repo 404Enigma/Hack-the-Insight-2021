@@ -18,6 +18,16 @@ h1 {
     line-height: 3.25rem;
     font-family: "Poppins";
 }
+.text-container h1 {
+    color: #fff;
+    font-size: 4.5rem;
+}
+@media (max-width: 568px) {
+    .text-container h1 {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+}
 
 h2 {
     color: #000000;
