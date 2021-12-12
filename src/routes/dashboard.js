@@ -12,12 +12,14 @@ router.get("/dashboard", async (req, res) => {
     res.render("pages/dashboard", { user });
 });
 
-router.post("/query", async (req, res) => {
-    const { query } = req.body;
+router.get("/query/:data", async (req, res) => {
+    const data = req.params.data;
 
-    console.log(query);
+    console.log(data);
+    const response = axios.post("http://localhost/8080", { query: data });
+    const answer = response.data;
 
-    res.send("success");
+    res.render("pages/dashboard", { data, answer });
 });
 
 module.exports = router;
