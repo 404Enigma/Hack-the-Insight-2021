@@ -52,3 +52,10 @@ body {
         transform: skew(-40deg) translateY(-1000px);
     }
 }
+
+.card {
+    border: 2px solid white;
+}
+.card-header {
+    border-bottom: 1px solid white;
+}
