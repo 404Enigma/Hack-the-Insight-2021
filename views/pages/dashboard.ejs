@@ -211,9 +211,8 @@
                     // document.getElementById("modal__content").innerHTML = "Task Added!";
                     // $("#liveToast").toast("show");
                     axios({
-                        method: "post",
-                        url: "/query",
-                        data,
+                        method: "get",
+                        url: `/query/${data}`,
                     })
                         .then(function (response) {
                             console.log(response);
