@@ -12,4 +12,12 @@ router.get("/dashboard", async (req, res) => {
     res.render("pages/dashboard", { user });
 });
 
+router.post("/query", async (req, res) => {
+    const { query } = req.body;
+
+    console.log(query);
+
+    res.send("success");
+});
+
 module.exports = router;
