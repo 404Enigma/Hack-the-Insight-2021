@@ -344,8 +344,8 @@ table.dataTable thead .sorting_desc {
     background: none;
     color: #1d1f25;
 }
-.badge {
-    color: #1d1f25;
+.card-body .badge {
+    font-size: large;
 }
 
 @media (max-width: 768px) {
@@ -355,5 +355,8 @@ table.dataTable thead .sorting_desc {
     .card,
     .stats .card {
         width: 100%;
+    }
+    .badge {
+        font-size: smaller;
     }
 }
