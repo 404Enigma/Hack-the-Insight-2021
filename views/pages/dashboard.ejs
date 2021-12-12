@@ -111,14 +111,14 @@
                         <div class="card mb-3">
                             <div class="card-header border-white"><h4>Query</h4></div>
                             <div class="card-body">
-                                <form class="row g-3" id="review_form">
+                                <form class="row g-3" id="query_form">
                                     <div class="col-12">
                                         <label for="feedback" class="form-label">Enter your query here.</label>
                                         <input
                                             type="text"
                                             class="form-control"
                                             id="feedback"
-                                            name="feedback"
+                                            name="query"
                                             placeholder="How is the product?"
                                         />
                                     </div>
@@ -192,19 +192,19 @@
         </script>
 
         <script>
-            const review_form = document.getElementById("review_form");
-            if (typeof review_form != "undefined" && review_form != null) {
+            const query_form = document.getElementById("query_form");
+            if (typeof query_form != "undefined" && query_form != null) {
                 // Exists.
-                review_form.addEventListener("submit", async (e) => {
+                query_form.addEventListener("submit", async (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);
                     const data = Object.fromEntries(formData.entries());
-                    console.log({ data });
+                    console.log(data);
                     // document.getElementById("modal__content").innerHTML = "Task Added!";
                     // $("#liveToast").toast("show");
                     axios({
                         method: "post",
-                        url: "/feedback_string",
+                        url: "/query",
                         data,
                     })
                         .then(function (response) {
