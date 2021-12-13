@@ -8,6 +8,9 @@
 <h2>Website Link</h2>
 <a href="https://commentcritic.herokuapp.com/">Click Here</a>
 
+<h2>Android App</h2>
+<a href="https://github.com/404Enigma/Hack-the-Insight-2021/blob/master/Extra/Commentcritic.apk">Click Here</a>
+
 <div></div>
 &nbsp;
 &nbsp;
