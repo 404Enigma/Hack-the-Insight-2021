@@ -11,6 +11,9 @@
 <h2>Android App</h2>
 <a href="https://github.com/404Enigma/Hack-the-Insight-2021/blob/master/Extra/Commentcritic.apk">Click Here</a>
 
+<h2>Video Link</h2>
+<a href="https://youtu.be/H3OpEoH6V3w">Click Here</a>
+
 <div></div>
 &nbsp;
 &nbsp;
