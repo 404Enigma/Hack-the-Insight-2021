@@ -15,6 +15,10 @@
 <a href="https://youtu.be/H3OpEoH6V3w">Click Here</a>
 
 <div></div>
+<div>
+<h2>Tagline</h2>
+<p>Comment Critic is a web platform and an android app which helps organzations in filtering out the queries asked by the clients in a smart way by knowing the past feedback of the queries ask to an organization.</p>
+</div>
 &nbsp;
 &nbsp;
 <div>
